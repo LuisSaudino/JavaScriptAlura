@@ -29,3 +29,22 @@ console.log(calcMedia(notas))
     let calcMedia = (notas[0] + notas[1] + notas[2] + notas[3]) / notas.length 
     console.log(calcMedia, notas)
 }
+//
+{
+    const notas = [10, 6.5, 8, 7.5]
+    let somaDasNotas = 0
+    for (let i = 0; i < notas.length; i++) {
+        somaDasNotas += notas[i]
+    }
+    console.log(somaDasNotas)
+}
+//Média com forEach
+{
+   const notas = [10,6.5,8,7.5,9]
+   let  soma = 0
+   
+   notas.forEach(function(nota,indice,array){
+        soma += nota
+        console.log(soma)
+   })
+}
